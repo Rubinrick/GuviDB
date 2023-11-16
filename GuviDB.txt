@@ -1,0 +1,46 @@
+﻿StudentsDB
+
+
+CREATE TABLE GuviZen (
+  StudentId  INTEGER,
+  Name  TEXT,
+  Batch  TEXT,
+  Course TEXT,
+  Language TEXT,
+  Attendance INTEGER,
+  Mentor TEXT,
+  Sessiontime TIME
+);
+
+
+INSERT INTO GuviZen(StudentId,Name,Batch,Course,Language,Attendance,Mentor,Sessiontime) values (2349,"Rubin","B51WD2","FSD","Tamil",95,"Sanjay",8),
+
+
+(2350,"Vino","B51WD2","FSD","Tamil",93,"Sanjay ",8),
+ (2351,"Shahana","B51WD2","FSD","Tamil",90,"Sanjay",8),
+ (2352,"Lakshman","B52WE","FSD ","Hindi",93,"Sharma ",11),
+(2353,"Sneha","B51WE","FSD","Telugu",90,"Shanthi Rao ",8),
+  (2354,"Abi","B49WD","FSD","Telugu",90,"Shanthi Rao ",11),
+     (2355,"Zain","B49WD2","Data Science","Hindi",90,"Robert ",8),
+     (2369,"Hari","B52WE","Data Analytics","Hindi",93,"Sharma",11),
+     (2323,"Rohit","B51WE","Python Mastery","Telugu",90,"Shanthi Rao",8),
+        (2454,"Virat","B49WD","FSD","Telugu",90,"Shanthi Rao",11),
+        (2395,"Sam","B49WD2","Data Science","Hindi",90,"Robert ",8)
+;
+
+
+Mentors DB:
+CREATE TABLE GuviMentors (Mentor TEXT ,
+                          Batches TEXT ,
+                          Language TEXT ,
+                          Course TEXT ,
+                          Ratings INTEGER         );  
+
+
+INSERT INTO GuviMentors(Mentor,Batches,Language,Course,Ratings)
+VALUES ("Sanjay","B51WD2,B49WD","Tamil","FSD",5 ),
+("Sharma","B52WE","Hindi","FSD",4 ),
+("Shanthi Rao","B51WE","Telugu","FSD",4 ),
+("Robert","B51WE","Hindi","Data Science",4 ),
+("Sharma","B52WE","Hindi","Data Analytics",4 ),
+("Shanthi Rao","B51WE","Telugu","Python Mastery",4 ) ;
